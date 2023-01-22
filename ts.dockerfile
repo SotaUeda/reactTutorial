@@ -5,4 +5,3 @@ FROM node:18.12-bullseye
 COPY ./app/ /app/
 # ワーキングディレクトリ
 WORKDIR /app
-RUN npm install
