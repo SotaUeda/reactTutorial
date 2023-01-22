@@ -1,0 +1,12 @@
+services: 
+  node:
+    build:
+      context: .
+      dockerfile: ./ts.dockerfile
+    container_name: node
+    tty: true
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./app:/app
+    stdin_open: true 
